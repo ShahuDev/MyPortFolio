@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Devansh Shahu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Devansh Shahu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="img_logo" src="./assets/me.jpg" alt="Devansh shahu profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Devansh Shahu</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/DevanshShahuSDE.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info 
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/devansh-shahu-a8b06824a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ShahuDev'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img class="box"
+            src="./assets/img.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>6 Months <br /> Java Developer intern at Ngauge Digital </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Tech in Information Technology<br /> from Shri Ramdeobaba College of Engineering and Management</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Emerging IT professional with expertise in Java and JUnit. Seeking a software developer position at a
+              forward-thinking company, where skills in software development and cloud computing can be leveraged to support
+              innovative technology solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages and Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/java.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javaSript.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/SQL.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sb.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SpringBoot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/dj.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Applications and Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/ii.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Intellij IDEA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/postman.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git/GitHub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/OS.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Operating Systems</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/AWS.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Amazon Web Services</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                        src="./assets/ms.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>MicroServices</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-wrapper1">
+        <div class="experience-details-container1">
+          <div class="about-containers1">
+            <div class="details-container1 color-container">
+              <div class="article-container1">
+                <img
+                  src="./assets/BTS.jpeg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Bug Tracking System</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShahuDev/BTS'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShahuDev/BTS'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container1 color-container">
+
+              <div class="article-container1">
+                <img
+                  src="./assets/todolist.jpeg"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">To Do  List</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShahuDev/Todo-List-Backend'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShahuDev/Todo-List-Backend'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container1 color-container">
+
+              <div class="article-container1">
+                <img
+                  src="./assets/EmoSense.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Sentiment Analysis</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShahuDev/ES'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ShahuDev/ES'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    
+<section id="Certifications" style="margin-top: 150px; padding-top: 50px;">
+  <h1 class="title">Certifications</h1>
+  <div class="certifications-container">
+    <div class="certificate">
+      <img src="assets/javaCert.png" alt="Certificate 2" class="certificate-img" />
+      <h2 class="certificate-title">Java Masterclass 2025</h2>
+      <p class="certificate-details">Udemy - Fev 26, 2025</p>
+    </div>
+    <div class="certificate">
+      <img src="./assets/Coursera%20GitAndGitHub-1.png"alt="Certificate 2" class="certificate-img" />
+      <h2 class="certificate-title">Introduction to Git & GitHub</h2>
+      <p class="certificate-details">Coursera - Feb 13, 2024</p>
+    </div>
+    <div class="certificate">
+      <img src="./assets/mainCert-1.png"alt="Certificate 2" class="certificate-img" />
+      <h2 class="certificate-title">Fundamentals of Linux</h2>
+      <p class="certificate-details">Coursera - May 24, 2024</p>
+    </div>
+    <div class="certificate">
+      <img src="./assets/TJOP.png"alt="Certificate 2" class="certificate-img" />
+      <h2 class="certificate-title"> Joy of Python</h2>
+      <p class="certificate-details">NPTEL - 12 April, 2024</p>
+    </div>
+    <div class="certificate">
+      <img src="./assets/NetworkingBasicsUpdate20250226-26-laka47-1.png"alt="Certificate 2" class="certificate-img" />
+      <h2 class="certificate-title">Networking Basics</h2>
+      <p class="certificate-details">Cisco - 24 May , 2023</p>
+    </div>
+    <div class="certificate">
+      <img src="./assets/OperatingSystemsBasicsUpdate20250226-28-awyx01-1.png"alt="Certificate 2" class="certificate-img" />
+      <h2 class="certificate-title">Operating Systems Basics</h2>
+      <p class="certificate-details">Cisco - 20 june , 2023</p>
+    </div>
+
+    <!-- Add more certificates as needed -->
+  </div>
+</section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:shahudev51@gmail.com">shahudev51@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Devansh shahu. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
